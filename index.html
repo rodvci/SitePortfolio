@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROD CAPILI</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffd700'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <!-- LOADING SCREEN -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-content">
+      <div class="loader">
+        <svg id="pegtopone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+          <defs>
+            <filter id="shine-1"><feGaussianBlur stdDeviation="3"></feGaussianBlur></filter>
+            <mask id="mask-1">
+              <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="white"></path>
+            </mask>
+            <radialGradient id="lg1-1" cx="50" cy="66" fx="50" fy="66" r="30" gradientTransform="translate(0 35) scale(1 0.5)" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="black" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="black" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="black" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="lg2-1" cx="55" cy="20" fx="55" fy="20" r="30" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="white" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="white" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="white" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="lg3-1" cx="85" cy="50" fx="85" fy="50" xlink:href="#lg2-1"></radialGradient>
+            <radialGradient id="lg4-1" cx="50" cy="58" fx="50" fy="58" r="60" gradientTransform="translate(0 47) scale(1 0.2)" xlink:href="#lg3-1"></radialGradient>
+            <linearGradient id="lg5-1" x1="50" y1="90" x2="50" y2="10" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="black" stop-opacity="0.2"></stop>
+              <stop offset="40%" stop-color="black" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <g>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="currentColor"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg1-1)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="none" stroke="white" opacity="0.3" stroke-width="3" filter="url(#shine-1)" mask="url(#mask-1)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg2-1)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg3-1)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg4-1)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg5-1)"></path>
+          </g>
+        </svg>
+        <svg id="pegtoptwo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+          <defs>
+            <filter id="shine-2"><feGaussianBlur stdDeviation="3"></feGaussianBlur></filter>
+            <mask id="mask-2">
+              <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="white"></path>
+            </mask>
+            <radialGradient id="lg1-2" cx="50" cy="66" fx="50" fy="66" r="30" gradientTransform="translate(0 35) scale(1 0.5)" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="black" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="black" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="black" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="lg2-2" cx="55" cy="20" fx="55" fy="20" r="30" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="white" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="white" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="white" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="lg3-2" cx="85" cy="50" fx="85" fy="50" xlink:href="#lg2-2"></radialGradient>
+            <radialGradient id="lg4-2" cx="50" cy="58" fx="50" fy="58" r="60" gradientTransform="translate(0 47) scale(1 0.2)" xlink:href="#lg3-2"></radialGradient>
+            <linearGradient id="lg5-2" x1="50" y1="90" x2="50" y2="10" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="black" stop-opacity="0.2"></stop>
+              <stop offset="40%" stop-color="black" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <g>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="currentColor"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg1-2)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="none" stroke="white" opacity="0.3" stroke-width="3" filter="url(#shine-2)" mask="url(#mask-2)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg2-2)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg3-2)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg4-2)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg5-2)"></path>
+          </g>
+        </svg>
+        <svg id="pegtopthree" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+          <defs>
+            <filter id="shine-3"><feGaussianBlur stdDeviation="3"></feGaussianBlur></filter>
+            <mask id="mask-3">
+              <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="white"></path>
+            </mask>
+            <radialGradient id="lg1-3" cx="50" cy="66" fx="50" fy="66" r="30" gradientTransform="translate(0 35) scale(1 0.5)" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="black" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="black" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="black" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="lg2-3" cx="55" cy="20" fx="55" fy="20" r="30" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="white" stop-opacity="0.3"></stop>
+              <stop offset="50%" stop-color="white" stop-opacity="0.1"></stop>
+              <stop offset="100%" stop-color="white" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="lg3-3" cx="85" cy="50" fx="85" fy="50" xlink:href="#lg2-3"></radialGradient>
+            <radialGradient id="lg4-3" cx="50" cy="58" fx="50" fy="58" r="60" gradientTransform="translate(0 47) scale(1 0.2)" xlink:href="#lg3-3"></radialGradient>
+            <linearGradient id="lg5-3" x1="50" y1="90" x2="50" y2="10" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="black" stop-opacity="0.2"></stop>
+              <stop offset="40%" stop-color="black" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <g>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="currentColor"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg1-3)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="none" stroke="white" opacity="0.3" stroke-width="3" filter="url(#shine-3)" mask="url(#mask-3)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg2-3)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg3-3)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg4-3)"></path>
+            <path d="M63,37c-6.7-4-4-27-13-27s-6.3,23-13,27-27,4-27,13,20.3,9,27,13,4,27,13,27,6.3-23,13-27,27-4,27-13-20.3-9-27-13Z" fill="url(#lg5-3)"></path>
+          </g>
+        </svg>
+      </div>
+      <div class="loading-bar-wrap">
+        <div class="loading-bar-track">
+          <div class="loading-bar-fill" id="loadingBarFill"></div>
+        </div>
+        <span class="loading-percent" id="loadingPercent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="mouseSpotlight" class="spotlight-layer"></div>
+
+
+  <div class="split-container">
+    
+    <header class="left-sidebar">
+      <div class="sidebar-top">
+        <div class="brand-zone">
+          <h1 class="dev-name">Hi, I'm Rod!</h1>
+          <h2 class="dev-title"><span id="typewriter"></span><span class="txt-cursor">|</span></h2>
+          <p class="dev-tagline">Trained designer and developer, passionate about creating digital experiences, and contributor to services and products of clients.
+
+          </p>
+        </div>
+    
+        <nav class="indicator-nav">
+          <ul>
+            <li>
+              <a href="#about" class="active">
+                <span class="nav-line"></span>
+                <span class="nav-text">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#experience">
+                <span class="nav-line"></span>
+                <span class="nav-text">Experiences</span>
+              </a>
+            </li>
+            <li>
+              <a href="#projects">
+                <span class="nav-line"></span>
+                <span class="nav-text">Works</span>
+              </a>
+            </li>
+            <li>
+              <a href="#skills">
+                <span class="nav-line"></span>
+                <span class="nav-text">Tech Matrix</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" id="connectBtn" class="connect-trigger">
+                <span class="nav-line"></span>
+                <span class="nav-text">Let's Connect</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="utility-row">
+          <a href="CV-ROD VINCENT O. CAPILI.pdf"
+            class="cv-download-link"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> VIEW FULL RESUME
+          </a>
+        </div>
+        <div class="social-uplinks">
+          <a href="mailto:rvocapili@gmail.com" title="Email Uplink"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/rodvci" target="_blank" title="Git Protocol"><i class="fa-brands fa-github"></i></a>
+          <a href="https://ph.linkedin.com/in/rod-vincent-capili-90b5b8311" target="_blank" title="LinkedIn Directory"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/rvdci/" target="_blank" title="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="right-content-stream">
+      
+      <section id="about" class="scroll-anchor">
+	    <!-- <h2 class="section-title">ABOUT ME</h2> -->
+      
+        <p class="mobile-section-header">ABOUT ME</p>
+
+        <div class="about-member-card">
+
+          <div class="about-photo-block">
+            <div class="about-photo-frame">
+              <img src="Snapseed.jpeg" alt="Rod Vincent O. Capili" class="about-photo" />
+              <div class="about-photo-glow"></div>
+            </div>
+          </div>
+
+          <div class="profile-stream-card">
+            <h3 class="about-name-tag">Rod Vincent O. Capili</h3>
+
+            <div class="about-photo-badge">
+              <div class="glow"></div>
+              <i class="fa-solid fa-terminal"></i>
+              <span>Pretending to build something</span>
+            </div>
+
+            <p>
+            I'm a self-taught computer engineering graduate from Bohol, Philippines, with a focus on developing responsive, modern, and user-friendly web applications.
+            I am passionate about turning creativity and knowledge into practical solutions.
+            I have assisted numerous clients in establishing their online presence and am committed to staying updated with the latest technologies.
+            Currently, I work as a freelance web developer, designing adaptable and user-focused applications, and am seeking a full-time position.
+            </p>
+
+            <a class="about-connect-link" href="mailto:rvocapili@gmail.com">
+              <i class="fa-solid fa-paper-plane"></i> Let's talk
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="scroll-anchor">
+        <p class="mobile-section-header">PROFESSIONAL JOURNEY</p>
+        <h2 class="section-title">PROFESSIONAL JOURNEY</h2>
+        <div class="timeline-stream">
+
+          <div class="tl-entry">
+            <div class="tl-left">
+              <span class="tl-date">June 2026</span>
+            </div>
+            <div class="tl-spine">
+              <div class="tl-dot">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <h3>Graduated — University of Bohol</h3>
+                <span class="tl-type tl-type--edu">Education</span>
+              </div>
+              <h4>B.S. Computer Engineering · CETAFA</h4>
+              <p>Completed a Bachelor's Degree in Computer Engineering, earning the Medallion of Leadership and Service for active involvement in UBCOMPESA. Delivered two capstone research projects: a mobile logistics tracking app and a classroom automation system with attendance tracking.</p>
+              <div class="card-pills">
+                <span>Chapter President UBCOMPESA</span><span>Region 7 Secretary ICpEP.SE-R7</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-entry">
+            <div class="tl-left">
+              <span class="tl-date">March 2026</span>
+            </div>
+            <div class="tl-spine">
+              <div class="tl-dot">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <h3>Project Leader — BukoLabs.io</h3>
+                <span class="tl-type tl-type--intern">Internship</span>
+              </div>
+              <h4>Project Lead Manager · Student Intern</h4>
+              <p>Led cross-functional teams on high-impact technical initiatives. Produced full project documentation — specs, user manuals, and progress reports — and presented final deliverables to company executives and stakeholders at the close of the internship.</p>
+              <div class="card-pills">
+                <span>Event Management System</span><span>HapsayHub</span><span>BukoLabs.io</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-entry">
+            <div class="tl-left">
+              <span class="tl-date">2024 – Present</span>
+            </div>
+            <div class="tl-spine">
+              <div class="tl-dot">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <h3>WordPress Developer</h3>
+                <span class="tl-type tl-type--freelance">Freelance</span>
+              </div>
+              <h4>Web Developer · Web Designer</h4>
+              <p>Built and customized WordPress sites from client briefs, maintaining close collaboration throughout to tune performance and responsiveness. Provides ongoing maintenance and support post-launch.</p>
+              <div class="card-pills">
+                <span>Plugin Integration</span><span>Responsive Web Design</span><span>Client Collaboration</span><span>Website Maintenance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-entry">
+            <div class="tl-left">
+              <span class="tl-date">2024 – 2025</span>
+            </div>
+            <div class="tl-spine">
+              <div class="tl-dot">
+                <i class="fa-solid fa-hashtag"></i>
+              </div>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-header">
+                <h3>Social Media Manager</h3>
+                <span class="tl-type tl-type--freelance">Freelance</span>
+              </div>
+              <h4>Social Media Manager · Web Designer</h4>
+              <p>Managed social accounts across an outsourcing firm, eCommerce brand, and personal blog — maintaining visual brand consistency. Designed full UI prototypes in Canva and collaborated with stakeholders to improve engagement and user experience.</p>
+              <div class="card-pills">
+                <span>Canva UI/UX Design</span><span>Brand Development</span><span>Responsive Web Design</span> <span>Content Creation</span> <span>Audience Engagement</span>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </section>
+
+      <section id="projects" class="scroll-anchor">
+        <p class="mobile-section-header">FEATURED PROJECTS</p>
+        <h2 class="section-title">FEATURED PROJECTS</h2>
+        <div class="projects-list">
+
+          <!-- ── STACK GROUP 1: App Projects ── -->
+          <div class="proj-stack-wrapper">
+            <p class="proj-stack-label">App Projects</p>
+            <ul class="proj-stack">
+
+              <li style="--i:1;">
+                <a href="https://github.com/rodvci/BiyahE-Android-Application-for-Passengers" target="_blank" class="proj-stack-inner">
+                  <div class="proj-stack-icon">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                  </div>
+                  <div class="proj-stack-details">
+                    <div class="proj-year">2025</div>
+                    <h3 class="proj-title">BiyahE Application <i class="fa-solid fa-arrow-up-right-from-square proj-link-icon"></i></h3>
+                    <p class="proj-desc">Undergraduate thesis capstone for a modern logistics tracking environment — a mobile Android app paired with a web-based admin dashboard for the metropolitan area.</p>
+                    <div class="card-pills">
+                      <span>Mobile Development</span><span>Web Application</span><span>UI/UX Design</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li style="--i:2;">
+                <a href="https://klaseco.com/login" target="_blank" class="proj-stack-inner">
+                  <div class="proj-stack-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                  </div>
+                  <div class="proj-stack-details">
+                    <div class="proj-year">2025</div>
+                    <h3 class="proj-title">KlasEco <i class="fa-solid fa-arrow-up-right-from-square proj-link-icon"></i></h3>
+                    <p class="proj-desc">Full-scale administrative optimization system for classroom automation inside the University of Bohol CETAFA Department. Translates systemic workflows into responsive digital views.</p>
+                    <div class="card-pills">
+                      <span>Web Application</span><span>Hardware Integration</span><span>Classroom Automation</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li style="--i:3;">
+                <a href="https://github.com/rodvci/HapsayHub" target="_blank" class="proj-stack-inner">
+                  <div class="proj-stack-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                  </div>
+                  <div class="proj-stack-details">
+                    <div class="proj-year">2026</div>
+                    <h3 class="proj-title">HapsayHub <i class="fa-solid fa-arrow-up-right-from-square proj-link-icon"></i></h3>
+                    <p class="proj-desc">A web-based event management platform that generates QR codes and streamlines attendee registration using modern web technologies.</p>
+                    <div class="card-pills">
+                      <span>HTML/CSS</span><span>JavaScript</span><span>PHP / Supabase</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- ── STACK GROUP 2: Web Builds ── -->
+          <div class="proj-stack-wrapper">
+            <p class="proj-stack-label">Web Builds</p>
+            <ul class="proj-stack">
+
+              <li style="--i:1;">
+                <a href="https://boholsouthbeach.com/" target="_blank" class="proj-stack-inner">
+                  <div class="proj-stack-icon">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                  </div>
+                  <div class="proj-stack-details">
+                    <div class="proj-year">2026</div>
+                    <h3 class="proj-title">Bohol South Beach Hotel <i class="fa-solid fa-arrow-up-right-from-square proj-link-icon"></i></h3>
+                    <p class="proj-desc">Hotel website with a modern responsive layout, booking integrations, and optimized performance for hospitality clients.</p>
+                    <div class="card-pills">
+                      <span>WordPress</span><span>Responsive Design</span><span>Hospitality</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li style="--i:2;">
+                <a href="https://fiestafilipinalv.com/" target="_blank" class="proj-stack-inner">
+                  <div class="proj-stack-icon">
+                    <i class="fa-solid fa-utensils"></i>
+                  </div>
+                  <div class="proj-stack-details">
+                    <div class="proj-year">2026</div>
+                    <h3 class="proj-title">Fiesta Filipina <i class="fa-solid fa-arrow-up-right-from-square proj-link-icon"></i></h3>
+                    <p class="proj-desc">Restaurant website with vibrant branding, menu layouts, and booking flows tailored for a Filipino dining experience.</p>
+                    <div class="card-pills">
+                      <span>WordPress</span><span>Branding</span><span>UI Design</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li style="--i:3;">
+                <a href="https://villaskyguadeloupe.com/" target="_blank" class="proj-stack-inner">
+                  <div class="proj-stack-icon">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <div class="proj-stack-details">
+                    <div class="proj-year">2025</div>
+                    <h3 class="proj-title">Villa Sky Guadeloupe <i class="fa-solid fa-arrow-up-right-from-square proj-link-icon"></i></h3>
+                    <p class="proj-desc">Luxury villa rental site with clean gallery layouts, booking integration, and mobile-first performance tuning.</p>
+                    <div class="card-pills">
+                      <span>WordPress</span><span>Responsive Design</span><span>Vacation Rental</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li style="--i:4;">
+                <a href="https://talentbridging.com/" target="_blank" class="proj-stack-inner">
+                  <div class="proj-stack-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </div>
+                  <div class="proj-stack-details">
+                    <div class="proj-year">2025</div>
+                    <h3 class="proj-title">Talent Bridging <i class="fa-solid fa-arrow-up-right-from-square proj-link-icon"></i></h3>
+                    <p class="proj-desc">Staffing and outsourcing platform website with professional layout, service pages, and lead generation forms.</p>
+                    <div class="card-pills">
+                      <span>WordPress</span><span>Lead Generation</span><span>Staffing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="projects-action-row">
+          <div class="sp">
+            <a href="https://github.com/rodvci" target="_blank" class="sparkle-button">
+              <span class="backdrop"></span>
+              <svg class="sparkle" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24782 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="text">View More Projects</span>
+            </a>
+            <div class="bodydrop"></div>
+            <span aria-hidden="true" class="particle-pen">
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg class="particle" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.937 3.846L7.75 1L8.563 3.846C8.77313 4.58114 9.1671 5.25062 9.70774 5.79126C10.2484 6.3319 10.9179 6.72587 11.653 6.936L14.5 7.75L11.654 8.563C10.9189 8.77313 10.2494 9.1671 9.70874 9.70774C9.1681 10.2484 8.77413 10.9179 8.564 11.653L7.75 14.5L6.937 11.654C6.72687 10.9189 6.3329 10.2494 5.79226 9.70874C5.25162 9.1681 4.58214 8.77413 3.847 8.564L1 7.75L3.846 6.937C4.58114 6.72687 5.25062 6.3329 5.79126 5.79226C6.3319 5.25162 6.72587 4.58214 6.936 3.847L6.937 3.846Z" fill="black" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            </span>
+          </div>
+        </div>
+        
+      </section>
+
+      <section id="skills" class="scroll-anchor">
+        <p class="mobile-section-header">TECHNICAL SKILLS | TECH STACK</p>
+        <h2 class="section-title">TECHNICAL SKILLS | TECH STACK</h2>
+
+        <div class="sk-tabs">
+          <button class="sk-tab active" data-tab="languages" role="tab" aria-selected="true">
+            Languages & Platforms
+       
+          </button>
+
+          <button class="sk-tab" data-tab="frameworks" role="tab" aria-selected="false">
+            Frameworks
+        
+          </button>
+        </div>
+
+        <!-- LANGUAGES PANEL -->
+        <div class="sk-panel active" id="sk-languages" role="tabpanel">
+
+            <div class="sk-card" style="--accent:#f7df1e;">
+              <div class="sk-card-icon"><i class="fa-brands fa-js"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#e44d26;">
+              <div class="sk-card-icon"><i class="fa-brands fa-html5"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">HTML / CSS</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#5fe5e5;">
+              <div class="sk-card-icon"><i class="fa-brands fa-java"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">Java</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#3572A5;">
+              <div class="sk-card-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">Python</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#a8b9cc;">
+              <div class="sk-card-icon"><i class="fa-solid fa-c"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">C &amp; C++</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#9b4f96;">
+              <div class="sk-card-icon"><i class="fa-brands fa-csharp"></i>C#</div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">C#</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#5fe5e5;">
+              <div class="sk-card-icon"><i class="fa-solid fa-wave-square"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">HDL</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#f24e1e;">
+              <div class="sk-card-icon"><i class="fa-brands fa-figma"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">Figma</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#21759b;">
+              <div class="sk-card-icon"><i class="fa-brands fa-wordpress"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">WordPress</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#00c4cc;">
+              <div class="sk-card-icon"><i class="fa-solid fa-palette"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">Canva</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#007acc;">
+              <div class="sk-card-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">VS Code</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#512bd4;">
+              <div class="sk-card-icon"><i class="fa-solid fa-code-branch"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">.NET</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#4479a1;">
+              <div class="sk-card-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">MySQL</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#3ecf8e;">
+              <div class="sk-card-icon"><i class="fa-solid fa-terminal"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">Verilog</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#00979d;">
+              <div class="sk-card-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">Arduino IDE</span>
+              </div>
+            </div>
+
+        </div>
+
+        <!-- FRAMEWORKS PANEL -->
+        <div class="sk-panel" id="sk-frameworks" role="tabpanel">
+
+            <div class="sk-card" style="--accent:#5fe5e5;">
+              <div class="sk-card-icon"><i class="fa-solid fa-camera"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">OpenCV</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#777bb4;">
+              <div class="sk-card-icon"><i class="fa-solid fa-globe"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">PHP / Web</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#f59e0b;">
+              <div class="sk-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">OOP Design</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#5fe5e5;">
+              <div class="sk-card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">Data Structures</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#3ecf8e;">
+              <div class="sk-card-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">IoT / Sensors</span>
+              </div>
+            </div>
+
+            <div class="sk-card" style="--accent:#94a3b8;">
+              <div class="sk-card-icon"><i class="fa-solid fa-microchip"></i></div>
+              <div class="sk-card-body">
+                <span class="sk-card-name">PCB Design</span>
+              </div>
+            </div>
+
+        </div>
+
+      </section>
+
+      <section id="contact" class="scroll-anchor">
+        <p class="mobile-section-header">LET'S CONNECT</p>
+        <h2 class="section-title">LET'S CONNECT</h2>
+        <div class="modal-body">
+          <div class="contact-info-section">
+            <h3>Contact Information</h3>
+           
+            <div class="contact-cards">
+              <a class="contact-card" href="https://www.google.com/maps/search/?api=1&query=Tagbilaran+City,+Bohol,+Philippines" target="_blank">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Address</h4>
+                <p>Tagbilaran City, Bohol, Philippines</p>
+              </a>
+              <a class="contact-card" href="mailto:rvocapili@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email</h4>   
+                <p>rvocapili@gmail.com</p>
+              </a>
+              <a class="contact-card" href="https://github.com/rodvci" target="_blank">
+                <i class="fa-brands fa-github"></i>
+               <h4>GitHub</h4>
+                <p>@rodvci</p>
+              </a>
+              <a class="contact-card" href="https://ph.linkedin.com/in/rod-vincent-capili-90b5b8311" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                <h4>LinkedIn</h4>
+                <p>Rod Vincent Capili</p>
+              </a>
+            </div>
+          </div>
+
+            <div class="contact-form-section">
+              <h3>Send a Message</h3>
+              <p class="contact-intro">Send a quick message and I'll get back to you soon.</p>
+              <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                  <div class="form-group">
+                    <div class="cf-input-container">
+                      <input class="cf-input" type="text" id="name" name="name" required />
+                      <label class="cf-label" for="name">Your Name</label>
+                      <div class="cf-topline"></div>
+                      <div class="cf-underline"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="cf-input-container">
+                      <input class="cf-input" type="email" id="email" name="email" required />
+                      <label class="cf-label" for="email">Email Address</label>
+                      <div class="cf-topline"></div>
+                      <div class="cf-underline"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="cf-input-container">
+                      <input class="cf-input" type="text" id="subject" name="subject" required />
+                      <label class="cf-label" for="subject">Subject</label>
+                      <div class="cf-topline"></div>
+                      <div class="cf-underline"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="cf-input-container cf-textarea-container">
+                      <textarea class="cf-input cf-textarea" id="message" name="message" rows="5" required></textarea>
+                      <label class="cf-label" for="message">What's on your mind?</label>
+                      <div class="cf-topline"></div>
+                      <div class="cf-underline"></div>
+                    </div>
+                  </div>
+                  <div class="form-actions">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="stream-footer">
+        <div class="footer-card">
+          <h3 class="footer-cta">Let's Build Something Great Together</h3>
+          <p>ALL RIGHTS RESERVED • 2026 © Rod Vincent O. Capili.</p>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+  <button id="floatingThemeToggle" class="floating-theme-toggle" aria-label="Toggle theme">
+    <i id="floatingThemeIcon" class="fa-solid fa-moon"></i>
+  </button>
+
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+</body>
+</html>
